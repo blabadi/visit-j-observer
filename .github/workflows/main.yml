@@ -4,7 +4,9 @@ name: check platform
 on:
   schedule:    
     - cron: "*/5 * * * *"
-  
+  workflow_dispatch:
+    inputs:
+      x: ""
 jobs:
   call:
     runs-on: ubuntu-latest
