@@ -9,7 +9,7 @@ jobs:
   call:
     runs-on: ubuntu-latest
     env:
-      CHANNEL_URL: ${{ secrets.SLACK_URL }}
+      SLACK_URL: ${{ secrets.SLACK_URL }}
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-node@v2
